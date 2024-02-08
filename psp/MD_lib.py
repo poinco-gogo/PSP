@@ -209,7 +209,7 @@ def get_box_size(vol, box_type="cubic", incr_per=0.4):  # c = cubic; r = rectang
         zmax = axis + axis * incr_per
         axis2 = np.sqrt(vol / zmax)
         return 0, axis2, 0, axis2, 0, zmax
-    elif: box_type == 'm':
+    elif box_type == 'm':
         zmax = axis - axis * incr_per
         axis2 = np.sqrt(vol / zmax)
         return 0, axis2, 0, axis2, 0, zmax
